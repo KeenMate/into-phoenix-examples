@@ -1,0 +1,8 @@
+C:\Git\KeenMate\into-phoenix-examples\RentToday\RentToday.Data\bin\Debug\netcoreapp3.1\RentToday.Data.deps.json
+C:\Git\KeenMate\into-phoenix-examples\RentToday\RentToday.Data\bin\Debug\netcoreapp3.1\RentToday.Data.dll
+C:\Git\KeenMate\into-phoenix-examples\RentToday\RentToday.Data\bin\Debug\netcoreapp3.1\RentToday.Data.pdb
+C:\Git\KeenMate\into-phoenix-examples\RentToday\RentToday.Data\obj\Debug\netcoreapp3.1\RentToday.Data.csprojAssemblyReference.cache
+C:\Git\KeenMate\into-phoenix-examples\RentToday\RentToday.Data\obj\Debug\netcoreapp3.1\RentToday.Data.AssemblyInfoInputs.cache
+C:\Git\KeenMate\into-phoenix-examples\RentToday\RentToday.Data\obj\Debug\netcoreapp3.1\RentToday.Data.AssemblyInfo.cs
+C:\Git\KeenMate\into-phoenix-examples\RentToday\RentToday.Data\obj\Debug\netcoreapp3.1\RentToday.Data.dll
+C:\Git\KeenMate\into-phoenix-examples\RentToday\RentToday.Data\obj\Debug\netcoreapp3.1\RentToday.Data.pdb

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- <link rel="stylesheet" href="/assets/lib/font-awesome/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/assets/lib/fonts/open-sans.css">
+		<link rel="stylesheet" href="/assets/lib/bulma/css/bulma.min.css">
+		<link rel="stylesheet" href="/assets/css/admin.css">
+		<title>RentToday - Backend</title>
+	</head>
+	<body>
+		<nav class="navbar is-white">
+			<div class="container">
+				<div class="navbar-brand">
+					<a class="navbar-item brand-text" href="/backend/index.html">
+						RentToday - Admin
+					</a>
+					<div class="navbar-burger burger" data-target="navMenu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div id="navMenu" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item" href="/backend/statistics.html">
+							Statistics
+						</a>
+						<a class="navbar-item" href="/backend/rents.html">
+							Rents
+						</a>
+						<a class="navbar-item" href="/backend/users.html">
+							Users
+						</a>
+						<a class="navbar-item" href="/backend/records.html">
+							Records
+						</a>
+						<a class="navbar-item" href="/backend/films.html">
+							Films
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="columns">
+				<!-- <div class="column is-3">
+									<aside class="menu is-hidden-mobile">
+														<p class="menu-label">
+																			General
+														</p>
+														<ul class="menu-list">
+																			<li>
+																								<a class="is-active">Home</a>
+																			</li>
+																			<li>
+																								<a>Statistics</a>
+																			</li>
+														</ul>
+														<p class="menu-label">
+																			Records
+														</p>
+														<ul class="menu-list">
+																			<li>
+																								<a>Records</a>
+																			</li>
+																			<li>
+																								<a>Add Record</a>
+																			</li>
+														</ul>
+														<p class="menu-label">
+																			Users
+														</p>
+														<ul class="menu-list">
+																			<li>
+																								<a>Users</a>
+																			</li>
+																			<li>
+																								<a>New User</a>
+																			</li>
+																			<li>
+																								<a>Rents</a>
+																			</li>
+														</ul>
+														<p class="menu-label">
+																			L1 Item
+														</p>
+														<ul class="menu-list">
+																			<li>
+																								<a>L2 Item</a>
+																			</li>
+																			<li>
+																								<a>L2 Item</a>
+																								<ul>
+																													<li>
+																																		<a>L3 Item</a>
+																													</li>
+																								</ul>
+																			</li>
+														</ul>
+									</aside>
+				</div> -->
+				<div class="column is-12">
+					<div class="columns">
+						<div class="column"><nav class="breadcrumb" aria-label="breadcrumbs">
+							<ul>
+								<li>
+									<a href="#">RentToday</a>
+								</li>
+								<li>
+									<a href="#">Templates</a>
+								</li>
+								<li>
+									<a href="#">Examples</a>
+								</li>
+								<li class="is-active">
+									<a href="#" aria-current="page">Records</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="column">
+						<button class="button is-primary is-pulled-right">Add record</button>
+					</div>
+				</div>
+					<table class="table is-stripped is-narrow is-hoverable is-fullwidth">
+						<thead>
+							<tr>
+								<th>Film Title</th>
+								<th>Location</th>
+								<th>Last Update</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Pirates of the Caribbean: Black pearl</td>
+								<td>LA's store</td>
+								<td>2019-02-15</td>
+							</tr>
+							<tr>
+								<td>Pirates of the Caribbean: Black pearl</td>
+								<td>LA's store</td>
+								<td>2019-02-15</td>
+							</tr>
+							<tr>
+								<td>Pirates of the Caribbean: Black pearl</td>
+								<td>LA's store</td>
+								<td>2019-02-15</td>
+							</tr>
+							<tr>
+								<td>Pirates of the Caribbean: Black pearl</td>
+								<td>LA's store</td>
+								<td>2019-02-15</td>
+							</tr>
+							<tr>
+								<td>Pirates of the Caribbean: Black pearl</td>
+								<td>LA's store</td>
+								<td>2019-02-15</td>
+							</tr>
+						</tbody>
+					</table>
+					<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+						<a class="pagination-previous">Previous</a>
+						<a class="pagination-next">Next page</a>
+						<ul class="pagination-list">
+							<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+							<li><span class="pagination-ellipsis">&hellip;</span></li>
+							<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+							<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+							<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+							<li><span class="pagination-ellipsis">&hellip;</span></li>
+							<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<script src="/assets/lib/bulma/js/bulma.js"></script>
+	</body>
+</html>
