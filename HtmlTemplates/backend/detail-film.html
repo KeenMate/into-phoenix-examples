@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="/assets/lib/fonts/open-sans.css">
 		<link rel="stylesheet" href="/assets/lib/bulma/css/bulma.min.css">
+		<link rel="stylesheet" href="/assets/css/site.css">
 		<link rel="stylesheet" href="/assets/css/admin.css">
 		<title>RentToday - Backend</title>
 	</head>
@@ -128,51 +129,72 @@
 							</div>
 						</div>
 					</div>
-					<textarea class="textarea" rows=2 placeholder="Film's description"></textarea>
 					<div class="columns">
-						<div class="column">
-							<div class="field">
-								<label class="label">Languages</label>
-								<div class="control">
-									<input class="input" type="text" placeholder="Enter languages">
+						<div class="column is-10">
+							<textarea class="textarea" rows=2 placeholder="Film's description"></textarea>
+							<div class="columns">
+								<div class="column">
+									<div class="field">
+										<label class="label">Languages</label>
+										<div class="control">
+											<input class="input" type="text" placeholder="Enter languages">
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="field">
+										<label class="label">Special features</label>
+										<div class="control">
+											<input class="input" type="text" placeholder="Enter features">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns">
+								<div class="column">
+									<ul>
+										<li>
+											Some language #1 [delete]
+										</li>
+										<li>
+											Some language #2 ...
+										</li>
+									</ul>
+								</div>
+								<div class="column">
+									<ul>
+										<li>
+											Some feature #1 [delete]
+										</li>
+										<li>
+											Some feature #2 ...
+										</li>
+										<li>
+											Some feature #3 ...
+										</li>
+										<li>
+											Some feature #4 ...
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="column">
-							<div class="field">
-								<label class="label">Special features</label>
-								<div class="control">
-									<input class="input" type="text" placeholder="Enter features">
-								</div>
+						<div class="column small-spaced-child-rows">
+							<div>
+								<a href="#" class="button is-link is-fullwidth">
+									Stock availability
+								</a>
 							</div>
-						</div>
-					</div>
-					<div class="columns">
-						<div class="column">
-							<ul>
-								<li>
-									Some language #1 [delete]
-								</li>
-								<li>
-									Some language #2 ...
-								</li>
-							</ul>
-						</div>
-						<div class="column">
-							<ul>
-								<li>
-									Some feature #1 [delete]
-								</li>
-								<li>
-									Some feature #2 ...
-								</li>
-								<li>
-									Some feature #3 ...
-								</li>
-								<li>
-									Some feature #4 ...
-								</li>
-							</ul>
+							<div>
+								<a href="#" class="button is-success is-fullwidth">
+									Active rents
+								</a>
+							</div>
+							<div>
+								<a href="#" class="button is-warning is-fullwidth">
+									Rents history
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
