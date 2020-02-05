@@ -49,3 +49,33 @@ p.subtitle {
 .fa{
   margin-left: 5px; 
 }
+
+/* Custom */
+
+.login-form.hero.is-fullheight {
+	min-height: initial;
+	/*max-height: 100vh*/
+}
+
+.login-form .hero-body {
+	align-items: initial !important;
+}
+
+.login-form .hero-body {
+	padding: 0;
+}
+
+
+body {
+	display: table;
+	width: 100%
+}
+
+body > nav.navbar,
+body > section.is-fullheight {
+	display: table-row;
+}
+
+.column {
+	padding: .25rem !important;
+}
