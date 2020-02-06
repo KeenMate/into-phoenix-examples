@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="/assets/lib/font-awesome/font-awesome.min.css"> -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.12.0/css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/solid.css" integrity="sha384-9AfJF7pZ+RYk3wXpf8ge6fc3XhPaW3Xl57Qj/mSzPckn9Tu8zJ9qUipWq+/utX20" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/fontawesome.css" integrity="sha384-VoScp22LWX8GkkUAmdkkkj+rz+/r84lmCD6FALIryJxjwBSz6kE6oebSlamQx19e" crossorigin="anonymous">
+		<link rel="stylesheet" href="/assets/lib/fonts/open-sans.css">
+		<link rel="stylesheet" href="/assets/lib/bulma/css/bulma.min.css">
+		<link rel="stylesheet" href="/assets/lib/bulma/css/bulma-carousel.min.css">
+		<link rel="stylesheet" href="/assets/css/site.css">
+		<link rel="stylesheet" href="/assets/css/frontend.css">
+		<title>RentToday</title>
+	</head>
+	<body>
+		<nav class="navbar is-white">
+			<div class="container">
+				<div class="navbar-brand">
+					<a class="navbar-item brand-text" href="/frontend/index.html">
+						RentToday
+					</a>
+					<div class="navbar-burger burger" data-target="navMenu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div id="navMenu" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item" href="/frontend/login.html">
+							Login
+						</a>
+						<a class="navbar-item" href="/frontend/films.html">
+							Films
+						</a>
+					</div>
+					<div class="navbar-end">
+						<a class="navbar-item" href="/frontend/basket.html">
+							<i class="fa fa-shopping-basket"></i>
+						</a>
+						<a class="navbar-item" href="/frontend/user-profile.html">
+							User #ABC
+						</a>
+						<a href="#" class="navbar-item">
+							<i class="fa fa-sign-out-alt"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="columns">
+				<div class="column is-12">
+					<nav class="breadcrumb" aria-label="breadcrumbs">
+						<ul>
+							<li>
+								<a href="#">RentToday</a>
+							</li>
+							<li>
+								<a href="#">Templates</a>
+							</li>
+							<li>
+								<a href="#">Examples</a>
+							</li>
+							<li class="is-active">
+								<a href="#" aria-current="page">Frontend</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="columns">
+						<div class="column">
+							<div class="level">
+								<div class="level-left">
+									<h1 class="is-size-3">Supr fascinating film</h1>
+								</div>
+								<div class="level-right">
+									<!-- Only if available and user is logged in -->
+									<a href="#" class="button is-medium is-link">Add to basket</a>
+									<!-- <a class="button is-link" disabled>You already have this film in your shopping basket</a> -->
+								</div>
+							</div>
+							<div class="tabs">
+								<ul>
+									<li class="is-active"><a href="#">Film details</a></li>
+									<li><a href="#">Rental history</a></li>
+								</ul>
+							</div>
+							<section class="tab-content is-active">
+								<div class="columns">
+									<div class="column">
+										<div class="content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											</p>
+										</div>
+										<span class="tag is-link">Special feature #1</span>
+										<span class="tag is-link">Special feature #2</span>
+										<span class="tag is-link">Special feature #3</span>
+									</div>
+									<div class="column is-3">
+										<div class="card">
+											<div class="card-image">
+												<figure class="image is-4by3">
+													<img src="https://via.placeholder.com/620x480?text=Film+poster">
+												</figure>
+											</div>
+											<div class="card-content">
+												<div class="field is-horizontal">
+													<label class="field-label">Rental:</label>
+													<div class="control">
+														<input type="text" class="input is-static has-text-centered" value="$2.99/$15" readonly>
+													</div>
+												</div>
+												<hr>
+												<div class="field is-horizontal">
+													<label class="field-label">Genre:</label>
+													<div class="control">
+														<input type="text" class="input is-static has-text-centered" value="Sci-fi" readonly>
+													</div>
+												</div>
+												<div class="field is-horizontal">
+													<label class="field-label">Length:</label>
+													<div class="control">
+														<input type="text" class="input is-static has-text-centered" value="1h 32m" readonly>
+													</div>
+												</div>
+												<div class="field is-horizontal">
+													<label class="field-label">Released:</label>
+													<div class="control">
+														<input type="text" class="input is-static has-text-centered" value="2016 02 16" readonly>
+													</div>
+												</div>
+												<div class="field is-horizontal">
+													<label class="field-label">Rating:</label>
+													<div class="control">
+														<input type="text" class="input is-static has-text-centered" value="4.7⭐" readonly>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="tab-content">
+								<table class="table is-stripped is-narrow is-hoverable is-fullwidth">
+									<thead>
+										<tr>
+											<th>Date</th>
+											<th>Who</th>
+											<th>What</th>
+											<th>Due</th>
+											<th>Staff</th>
+											<th>Last Update</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2020 05 19</td>
+											<td>Will Terner</td>
+											<td>Pirates of the Caribbean: Black pearl</td>
+											<td>2020 05 25</td>
+											<td>Stue Big</td>
+											<td>2020 05 19</td>
+										</tr>
+										<tr>
+											<td>2020 05 19</td>
+											<td>Will Terner</td>
+											<td>Pirates of the Caribbean: Black pearl</td>
+											<td>2020 05 25</td>
+											<td>Stue Big</td>
+											<td>2020 05 19</td>
+										</tr>
+										<tr>
+											<td>2020 05 19</td>
+											<td>Will Terner</td>
+											<td>Pirates of the Caribbean: Black pearl</td>
+											<td>2020 05 25</td>
+											<td>Stue Big</td>
+											<td>2020 05 19</td>
+										</tr>
+										<tr>
+											<td>2020 05 19</td>
+											<td>Will Terner</td>
+											<td>Pirates of the Caribbean: Black pearl</td>
+											<td>2020 05 25</td>
+											<td>Stue Big</td>
+											<td>2020 05 19</td>
+										</tr>
+									</tbody>
+								</table>
+								<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+									<a class="pagination-previous">Previous</a>
+									<a class="pagination-next">Next page</a>
+									<ul class="pagination-list">
+										<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+										<li><span class="pagination-ellipsis">&hellip;</span></li>
+										<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+										<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+										<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+										<li><span class="pagination-ellipsis">&hellip;</span></li>
+										<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+									</ul>
+								</nav>
+							</section>
+						</div>
+						<div class="column is-3 is-fullheight is-hidden-mobile">
+							<h2 class="is-size-4">Recommendations</h2>
+							<div class="card">
+								<header class="card-header">
+									<a href="/frontend/detail-film.html" class="card-header-title">
+										Supr fascinating film
+									</a>
+								</header>
+								<div class="card-content">
+									<div class="media">
+										<div class="media-left">
+											<a href="/frontend/detail-film.html">
+												<figure class="image is-64x64">
+													<img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+												</figure>
+											</a>
+										</div>
+										<div class="media-content">
+											<p class="subtitle is-6">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<header class="card-header">
+									<a href="/frontend/detail-film.html" class="card-header-title">
+										Supr fascinating film
+									</a>
+								</header>
+								<div class="card-content">
+									<div class="media">
+										<div class="media-left">
+											<a href="/frontend/detail-film.html">
+												<figure class="image is-64x64">
+													<img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+												</figure>
+											</a>
+										</div>
+										<div class="media-content">
+											<p class="subtitle is-6">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<header class="card-header">
+									<a href="/frontend/detail-film.html" class="card-header-title">
+										Supr fascinating film
+									</a>
+								</header>
+								<div class="card-content">
+									<div class="media">
+										<div class="media-left">
+											<a href="/frontend/detail-film.html">
+												<figure class="image is-64x64">
+													<img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+												</figure>
+											</a>
+										</div>
+										<div class="media-content">
+											<p class="subtitle is-6">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="/assets/lib/bulma/js/bulma.js"></script>
+		<script src="/assets/lib/bulma/js/bulma-carousel.min.js"></script>
+	</body>
+</html>

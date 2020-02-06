@@ -74,6 +74,40 @@
 					</nav>
 					<div class="columns">
 						<div class="column">
+							<section class="section is-narrow film-filtering">
+								<div class="columns">
+									<div class="column">
+										<div class="field">
+											<label class="label">Search</label>
+											<div class="control">
+												<input class="input" type="text" placeholder="Search">
+											</div>
+										</div>
+									</div>
+									<div class="column">
+										<div class="field">
+											<label class="label">Actor</label>
+											<div class="control">
+												<input class="input" type="text" placeholder="Actor">
+											</div>
+										</div>
+									</div>
+									<div class="column is-2">
+										<div class="field">
+											<label class="label">Genre</label>
+											<div class="control">
+												<div class="select is-fullwidth">
+													<select>
+														<option selected>Choose</option>
+														<option>Sci-fi</option>
+														<option>Fantasy</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
 							<table class="table is-stripped is-narrow is-hoverable is-fullwidth">
 								<thead>
 									<tr>
@@ -128,9 +162,23 @@
 									</tr>
 								</tbody>
 							</table>
-							<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+							<!-- TODO: Put here msg: "We are sorry. There are no films matching your criteria." -->
+							<nav class="pagination" role="navigation" aria-label="pagination">
 								<a class="pagination-previous">Previous</a>
 								<a class="pagination-next">Next page</a>
+								<div class="field is-horizontal pagination-size is-vcenter">
+									<label class="field-label">Page size</label>
+									<div class="control">
+										<div class="select">
+											<select>
+												<option>10</option>
+												<option>15</option>
+												<option>30</option>
+												<option>100</option>
+											</select>
+										</div>
+									</div>
+								</div>
 								<ul class="pagination-list">
 									<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
 									<li><span class="pagination-ellipsis">&hellip;</span></li>
