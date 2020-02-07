@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<!-- <link rel="stylesheet" href="/assets/lib/font-awesome/font-awesome.min.css"> -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,6 +10,7 @@
 		<link rel="stylesheet" href="/assets/css/admin.css">
 		<title>RentToday - Backend</title>
 	</head>
+
 	<body>
 		<nav class="navbar is-white">
 			<div class="container">
@@ -120,20 +122,20 @@
 						</div>
 						<div class="column is-2">
 							<div class="field">
-									<label class="label">Rating</label>
-									<div class="control">
-										<div class="select is-fullwidth">
-											<select>
-												<option>Rating</option>
-												<option>G</option>
-												<option>PG</option>
-												<option>PG-13</option>
-												<option>R</option>
-												<option>NC-17</option>
-											</select>
-										</div>
+								<label class="label">Rating</label>
+								<div class="control">
+									<div class="select is-fullwidth">
+										<select>
+											<option>Rating</option>
+											<option>G</option>
+											<option>PG</option>
+											<option>PG-13</option>
+											<option>R</option>
+											<option>NC-17</option>
+										</select>
 									</div>
 								</div>
+							</div>
 						</div>
 					</div>
 					<div class="columns">
@@ -194,13 +196,81 @@
 									<li><a>Rents history</a></li>
 								</ul>
 							</div>
-							<section class="tab-content is-active">
-								Stock availability
+							<section id="film-stock-availability-tab" class="tab-content is-active">
+								<table class="table is-stripped is-narrow is-hoverable is-fullwidth">
+									<thead>
+										<tr>
+											<th>Film Title</th>
+											<th>Location</th>
+											<th>Last Update</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Pirates of the Caribbean: Black pearl</td>
+											<td>LA's store</td>
+											<td>2019-02-15</td>
+										</tr>
+										<tr>
+											<td>Pirates of the Caribbean: Black pearl</td>
+											<td>LA's store</td>
+											<td>2019-02-15</td>
+										</tr>
+										<tr>
+											<td>Pirates of the Caribbean: Black pearl</td>
+											<td>LA's store</td>
+											<td>2019-02-15</td>
+										</tr>
+										<tr>
+											<td>Pirates of the Caribbean: Black pearl</td>
+											<td>LA's store</td>
+											<td>2019-02-15</td>
+										</tr>
+										<tr>
+											<td>Pirates of the Caribbean: Black pearl</td>
+											<td>LA's store</td>
+											<td>2019-02-15</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="3">
+												<nav class="pagination is-medium" role="navigation" aria-label="pagination">
+													<a class="pagination-previous">Previous</a>
+													<a class="pagination-next">Next page</a>
+													<div class="field is-horizontal pagination-extra-content is-vcenter">
+														<label class="field-label">Page size</label>
+														<div class="control">
+															<div class="select is-medium">
+																<select>
+																	<option>10</option>
+																	<option>15</option>
+																	<option>30</option>
+																	<option>100</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<ul class="pagination-list">
+														<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+														<li><span class="pagination-ellipsis">&hellip;</span></li>
+														<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+														<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+														</li>
+														<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+														<li><span class="pagination-ellipsis">&hellip;</span></li>
+														<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+													</ul>
+												</nav>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
 							</section>
-							<section class="tab-content">
+							<section id="film-active-rents-tab" class="tab-content">
 								Active rents
 							</section>
-							<section class="tab-content">
+							<section id="film-rents-history-tab" class="tab-content">
 								Rents history
 							</section>
 						</div>
@@ -210,4 +280,5 @@
 		</div>
 		<script src="/assets/lib/bulma/js/bulma.js"></script>
 	</body>
+
 </html>

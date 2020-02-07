@@ -12,7 +12,7 @@ html, body {
   overflow: auto;
 }
 nav.navbar {
-  border-top: 4px solid #276cda;
+  /* border-top: 4px solid #276cda; */
   margin-bottom: 1rem;
 }
 .navbar-item.brand-text {
@@ -259,7 +259,7 @@ section.section {
 }
 
 section.section.is-narrow {
-	padding: .5rem 0;
+	padding: .7rem 0;
 }
 
 section.tab-content {
@@ -274,7 +274,7 @@ section.tab-content.is-active {
 	margin-bottom: 0
 }
 
-nav.pagination > .pagination-size {
+nav.pagination > .pagination-extra-content {
 	-webkit-order: 2;
 	-moz-order: 2;
 	-ms-order: 2;

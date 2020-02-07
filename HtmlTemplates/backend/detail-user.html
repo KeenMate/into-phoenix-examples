@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<!-- <link rel="stylesheet" href="/assets/lib/font-awesome/font-awesome.min.css"> -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,6 +10,7 @@
 		<link rel="stylesheet" href="/assets/css/admin.css">
 		<title>RentToday - Backend</title>
 	</head>
+
 	<body>
 		<nav class="navbar is-white">
 			<div class="container">
@@ -204,7 +206,7 @@
 					<li><a href="#">Rent history</a></li>
 				</ul>
 			</div>
-			<section class="tab-content is-active">
+			<section id="user-detail-active-rents-tab" class="tab-content is-active">
 				<table class="table is-stripped is-narrow is-hoverable is-fullwidth">
 					<thead>
 						<tr>
@@ -250,22 +252,41 @@
 							<td>2020 05 19</td>
 						</tr>
 					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="6">
+								<nav class="pagination is-medium" role="navigation" aria-label="pagination">
+									<a class="pagination-previous">Previous</a>
+									<a class="pagination-next">Next page</a>
+									<div class="field is-horizontal pagination-extra-content is-vcenter">
+										<label class="field-label">Page size</label>
+										<div class="control">
+											<div class="select is-medium">
+												<select>
+													<option>10</option>
+													<option>15</option>
+													<option>30</option>
+													<option>100</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<ul class="pagination-list">
+										<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+										<li><span class="pagination-ellipsis">&hellip;</span></li>
+										<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+										<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+										<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+										<li><span class="pagination-ellipsis">&hellip;</span></li>
+										<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+									</ul>
+								</nav>
+							</td>
+						</tr>
+					</tfoot>
 				</table>
-				<nav class="pagination is-centered" role="navigation" aria-label="pagination">
-					<a class="pagination-previous">Previous</a>
-					<a class="pagination-next">Next page</a>
-					<ul class="pagination-list">
-						<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
-						<li><span class="pagination-ellipsis">&hellip;</span></li>
-						<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
-						<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
-						<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
-						<li><span class="pagination-ellipsis">&hellip;</span></li>
-						<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
-					</ul>
-				</nav>
 			</section>
-			<section class="tab-content">
+			<section id="user-detail-rents-history-tab" class="tab-content">
 				<table class="table is-stripped is-narrow is-hoverable is-fullwidth">
 					<thead>
 						<tr>
@@ -278,56 +299,108 @@
 						</tr>
 					</thead>
 					<tbody>
+					<tfoot>
 						<tr>
-							<td>2020 05 19</td>
-							<td>Will Terner</td>
-							<td>Pirates of the Caribbean: Black pearl</td>
-							<td>2020 05 25</td>
-							<td>Stue Big</td>
-							<td>2020 05 19</td>
+							<td colspan="6">
+								<nav class="pagination is-medium" role="navigation" aria-label="pagination">
+									<a class="pagination-previous">Previous</a>
+									<a class="pagination-next">Next page</a>
+									<div class="field is-horizontal pagination-extra-content is-vcenter">
+										<label class="field-label">Page size</label>
+										<div class="control">
+											<div class="select is-medium">
+												<select>
+													<option>10</option>
+													<option>15</option>
+													<option>30</option>
+													<option>100</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<ul class="pagination-list">
+										<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+										<li><span class="pagination-ellipsis">&hellip;</span></li>
+										<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+										<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+										<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+										<li><span class="pagination-ellipsis">&hellip;</span></li>
+										<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+									</ul>
+								</nav>
+							</td>
 						</tr>
-						<tr>
-							<td>2020 05 19</td>
-							<td>Will Terner</td>
-							<td>Pirates of the Caribbean: Black pearl</td>
-							<td>2020 05 25</td>
-							<td>Stue Big</td>
-							<td>2020 05 19</td>
-						</tr>
-						<tr>
-							<td>2020 05 19</td>
-							<td>Will Terner</td>
-							<td>Pirates of the Caribbean: Black pearl</td>
-							<td>2020 05 25</td>
-							<td>Stue Big</td>
-							<td>2020 05 19</td>
-						</tr>
-						<tr>
-							<td>2020 05 19</td>
-							<td>Will Terner</td>
-							<td>Pirates of the Caribbean: Black pearl</td>
-							<td>2020 05 25</td>
-							<td>Stue Big</td>
-							<td>2020 05 19</td>
-						</tr>
+					</tfoot>
+					<tr>
+						<td>2020 05 19</td>
+						<td>Will Terner</td>
+						<td>Pirates of the Caribbean: Black pearl</td>
+						<td>2020 05 25</td>
+						<td>Stue Big</td>
+						<td>2020 05 19</td>
+					</tr>
+					<tr>
+						<td>2020 05 19</td>
+						<td>Will Terner</td>
+						<td>Pirates of the Caribbean: Black pearl</td>
+						<td>2020 05 25</td>
+						<td>Stue Big</td>
+						<td>2020 05 19</td>
+					</tr>
+					<tr>
+						<td>2020 05 19</td>
+						<td>Will Terner</td>
+						<td>Pirates of the Caribbean: Black pearl</td>
+						<td>2020 05 25</td>
+						<td>Stue Big</td>
+						<td>2020 05 19</td>
+					</tr>
+					<tr>
+						<td>2020 05 19</td>
+						<td>Will Terner</td>
+						<td>Pirates of the Caribbean: Black pearl</td>
+						<td>2020 05 25</td>
+						<td>Stue Big</td>
+						<td>2020 05 19</td>
+					</tr>
 					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="6">
+								<nav class="pagination is-medium" role="navigation" aria-label="pagination">
+									<a class="pagination-previous">Previous</a>
+									<a class="pagination-next">Next page</a>
+									<div class="field is-horizontal pagination-extra-content is-vcenter">
+										<label class="field-label">Page size</label>
+										<div class="control">
+											<div class="select is-medium">
+												<select>
+													<option>10</option>
+													<option>15</option>
+													<option>30</option>
+													<option>100</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<ul class="pagination-list">
+										<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+										<li><span class="pagination-ellipsis">&hellip;</span></li>
+										<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+										<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+										<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+										<li><span class="pagination-ellipsis">&hellip;</span></li>
+										<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+									</ul>
+								</nav>
+							</td>
+						</tr>
+					</tfoot>
 				</table>
-				<nav class="pagination is-centered" role="navigation" aria-label="pagination">
-					<a class="pagination-previous">Previous</a>
-					<a class="pagination-next">Next page</a>
-					<ul class="pagination-list">
-						<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
-						<li><span class="pagination-ellipsis">&hellip;</span></li>
-						<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
-						<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
-						<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
-						<li><span class="pagination-ellipsis">&hellip;</span></li>
-						<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
-					</ul>
-				</nav>
-			</section>
+			</section id="user-detail-active-rents-tab">
 		</div>
-	</div>
-	<script src="/assets/lib/bulma/js/bulma.js"></script>
-</body>
+		</div>
+		<script src="/assets/lib/bulma/js/bulma.js"></script>
+	</body>
+
 </html>

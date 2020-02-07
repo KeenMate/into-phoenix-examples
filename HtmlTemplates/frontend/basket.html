@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- <link rel="stylesheet" href="/assets/lib/font-awesome/font-awesome.min.css"> -->
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.12.0/css/font-awesome.min.css"> -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/solid.css" integrity="sha384-9AfJF7pZ+RYk3wXpf8ge6fc3XhPaW3Xl57Qj/mSzPckn9Tu8zJ9qUipWq+/utX20" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/fontawesome.css" integrity="sha384-VoScp22LWX8GkkUAmdkkkj+rz+/r84lmCD6FALIryJxjwBSz6kE6oebSlamQx19e" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/solid.css"
+			integrity="sha384-9AfJF7pZ+RYk3wXpf8ge6fc3XhPaW3Xl57Qj/mSzPckn9Tu8zJ9qUipWq+/utX20" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/fontawesome.css"
+			integrity="sha384-VoScp22LWX8GkkUAmdkkkj+rz+/r84lmCD6FALIryJxjwBSz6kE6oebSlamQx19e" crossorigin="anonymous">
 		<link rel="stylesheet" href="/assets/lib/fonts/open-sans.css">
 		<link rel="stylesheet" href="/assets/lib/bulma/css/bulma.min.css">
 		<link rel="stylesheet" href="/assets/lib/bulma/css/bulma-carousel.min.css">
@@ -13,6 +16,7 @@
 		<link rel="stylesheet" href="/assets/css/frontend.css">
 		<title>RentToday</title>
 	</head>
+
 	<body>
 		<nav class="navbar is-white">
 			<div class="container">
@@ -82,14 +86,24 @@
 									<div class="field is-grouped">
 										<p class="control">
 											<button class="button is-medium is-danger">
-											Clear basket
+												Clear basket
 											</button>
 										</p>
-										<p class="control">
-											<button class="button is-medium is-link">
-											Rent
-											</button>
-										</p>
+										<div class="field has-addons">
+											<p class="control">
+												<a class="button is-medium is-static">
+													$
+												</a>
+											</p>
+											<div class="control">
+												<input class="input is-medium" type="number" value="19.66" readonly>
+											</div>
+											<div class="control">
+												<button class="button is-medium is-link">
+													Rent
+												</button>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -259,4 +273,5 @@
 		<script src="/assets/lib/bulma/js/bulma.js"></script>
 		<script src="/assets/lib/bulma/js/bulma-carousel.min.js"></script>
 	</body>
+
 </html>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- <link rel="stylesheet" href="/assets/lib/font-awesome/font-awesome.min.css"> -->
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.12.0/css/font-awesome.min.css"> -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/solid.css" integrity="sha384-9AfJF7pZ+RYk3wXpf8ge6fc3XhPaW3Xl57Qj/mSzPckn9Tu8zJ9qUipWq+/utX20" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/fontawesome.css" integrity="sha384-VoScp22LWX8GkkUAmdkkkj+rz+/r84lmCD6FALIryJxjwBSz6kE6oebSlamQx19e" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/solid.css"
+			integrity="sha384-9AfJF7pZ+RYk3wXpf8ge6fc3XhPaW3Xl57Qj/mSzPckn9Tu8zJ9qUipWq+/utX20" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/fontawesome.css"
+			integrity="sha384-VoScp22LWX8GkkUAmdkkkj+rz+/r84lmCD6FALIryJxjwBSz6kE6oebSlamQx19e" crossorigin="anonymous">
 		<link rel="stylesheet" href="/assets/lib/fonts/open-sans.css">
 		<link rel="stylesheet" href="/assets/lib/bulma/css/bulma.min.css">
 		<link rel="stylesheet" href="/assets/lib/bulma/css/bulma-carousel.min.css">
@@ -13,8 +16,10 @@
 		<link rel="stylesheet" href="/assets/css/frontend.css">
 		<title>RentToday</title>
 	</head>
+
 	<body>
-		<nav class="navbar is-white">
+		<!-- Top navigation -->
+		<nav class="navbar is-info">
 			<div class="container">
 				<div class="navbar-brand">
 					<a class="navbar-item brand-text" href="/frontend/index.html">
@@ -27,26 +32,33 @@
 					</div>
 				</div>
 				<div id="navMenu" class="navbar-menu">
-					<div class="navbar-start">
-						<a class="navbar-item" href="/frontend/login.html">
-							Login
-						</a>
-						<a class="navbar-item" href="/frontend/films.html">
-							Films
-						</a>
-					</div>
-					<div class="navbar-end">
-						<!-- Basket only for logged in users -->
-						<a class="navbar-item" href="/frontend/basket.html">
-							<i class="fa fa-shopping-basket"></i>
-						</a>
-						<a class="navbar-item" href="/frontend/user-profile.html">
-							User #ABC
-						</a>
-						<!-- Logout icon only for logged in users -->
-						<a href="#" class="navbar-item">
-							<i class="fa fa-sign-out-alt"></i>
-						</a>
+					<div class="level is-fullwidth">
+						<div class="level-left">
+							<div class="navbar-start">
+								<a class="navbar-item" href="/frontend/login.html">
+									Login
+								</a>
+								<a class="navbar-item" href="/frontend/films.html">
+									Films
+								</a>
+							</div>
+						</div>
+						<div class="level-right">
+							<div class="navbar-end">
+								<!-- Basket only for logged in users -->
+								<a class="navbar-item" href="/frontend/basket.html">
+									<i class="fa fa-shopping-basket"></i>
+								</a>
+								<a class="navbar-item" href="/frontend/user-profile.html">
+									User #ABC
+									<!-- Or "Log in" -->
+								</a>
+								<!-- Logout icon only for logged in users -->
+								<a href="#" class="navbar-item">
+									<i class="fa fa-sign-out-alt"></i>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -153,4 +165,5 @@
 		<script src="/assets/lib/bulma/js/bulma.js"></script>
 		<script src="/assets/lib/bulma/js/bulma-carousel.min.js"></script>
 	</body>
+
 </html>
