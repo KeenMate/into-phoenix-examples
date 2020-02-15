@@ -1,3 +1,7 @@
 [submodule "RentToday/Phoenix"]
 	path = RentToday/Phoenix
 	url = https://github.com/KeenMate/renttoday-phoenix
+
+[submodule "RentToday/AspNetCore"]
+	path = RentToday/AspNetCore
+	url = https://github.com/KeenMate/renttoday-aspnet-core
